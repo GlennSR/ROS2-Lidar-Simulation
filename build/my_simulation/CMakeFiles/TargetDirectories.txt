@@ -1,0 +1,11 @@
+/home/glenio/ros2_sim_ws/build/my_simulation/CMakeFiles/uninstall.dir
+/home/glenio/ros2_sim_ws/build/my_simulation/CMakeFiles/my_simulation_uninstall.dir
+/home/glenio/ros2_sim_ws/build/my_simulation/CMakeFiles/pointcloud_subscriber.dir
+/home/glenio/ros2_sim_ws/build/my_simulation/CMakeFiles/robot_control.dir
+/home/glenio/ros2_sim_ws/build/my_simulation/CMakeFiles/test.dir
+/home/glenio/ros2_sim_ws/build/my_simulation/CMakeFiles/edit_cache.dir
+/home/glenio/ros2_sim_ws/build/my_simulation/CMakeFiles/rebuild_cache.dir
+/home/glenio/ros2_sim_ws/build/my_simulation/CMakeFiles/list_install_components.dir
+/home/glenio/ros2_sim_ws/build/my_simulation/CMakeFiles/install.dir
+/home/glenio/ros2_sim_ws/build/my_simulation/CMakeFiles/install/local.dir
+/home/glenio/ros2_sim_ws/build/my_simulation/CMakeFiles/install/strip.dir

@@ -1,0 +1,448 @@
+[0.000000] (-) TimerEvent: {}
+[0.000130] (my_simulation) JobQueued: {'identifier': 'my_simulation', 'dependencies': OrderedDict()}
+[0.000164] (my_simulation) JobStarted: {'identifier': 'my_simulation'}
+[0.007790] (my_simulation) JobProgress: {'identifier': 'my_simulation', 'progress': 'cmake'}
+[0.008130] (my_simulation) Command: {'cmd': ['/usr/bin/cmake', '/home/glenio/ros2_sim_ws/src/my_simulation', '-DCMAKE_INSTALL_PREFIX=/home/glenio/ros2_sim_ws/install/my_simulation'], 'cwd': '/home/glenio/ros2_sim_ws/build/my_simulation', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'glenio'), ('LC_TIME', 'fr_FR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/glenio'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'fr_FR.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1809'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=a24e36c757c78ab6a174940b68ef4dae'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'glenio'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'glenio'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/glenio/Parme/LIDAR/Ouster/VCPKG/vcpkg:/opt/ros/humble/bin:/home/glenio/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1809,unix/ubuntu:/tmp/.ICE-unix/1809'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'fr_FR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/bb07397b_c0da_41ad_baeb_a653b182df30'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'fr_FR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.EUY6D3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.243'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'fr_FR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('VCPKG_ROOT', '/home/glenio/Parme/LIDAR/Ouster/VCPKG/vcpkg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'fr_FR.UTF-8'), ('LC_IDENTIFICATION', 'fr_FR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/glenio/ros2_sim_ws/build/my_simulation'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=a24e36c757c78ab6a174940b68ef4dae'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'fr_FR.UTF-8'), ('LC_PAPER', 'fr_FR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099386] (-) TimerEvent: {}
+[0.130131] (my_simulation) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.196251] (my_simulation) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.199483] (-) TimerEvent: {}
+[0.208103] (my_simulation) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.284910] (my_simulation) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.293689] (my_simulation) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.294306] (my_simulation) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.294970] (my_simulation) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.299495] (my_simulation) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.299608] (-) TimerEvent: {}
+[0.389456] (my_simulation) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.397953] (my_simulation) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.398260] (my_simulation) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.398754] (my_simulation) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.399720] (-) TimerEvent: {}
+[0.408095] (my_simulation) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.499857] (-) TimerEvent: {}
+[0.600123] (-) TimerEvent: {}
+[0.700374] (-) TimerEvent: {}
+[0.800678] (-) TimerEvent: {}
+[0.806570] (my_simulation) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.900773] (-) TimerEvent: {}
+[0.944985] (my_simulation) StdoutLine: {'line': b'-- Found gazebo_ros: 3.9.0 (/opt/ros/humble/share/gazebo_ros/cmake)\n'}
+[1.000954] (-) TimerEvent: {}
+[1.065721] (my_simulation) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.073664] (my_simulation) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.086822] (my_simulation) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.101052] (-) TimerEvent: {}
+[1.105370] (my_simulation) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.127862] (my_simulation) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.190864] (my_simulation) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.195157] (my_simulation) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.201153] (-) TimerEvent: {}
+[1.298738] (my_simulation) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.301227] (-) TimerEvent: {}
+[1.328591] (my_simulation) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.371320] (my_simulation) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.386133] (my_simulation) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.401382] (-) TimerEvent: {}
+[1.468705] (my_simulation) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.469018] (my_simulation) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.501490] (-) TimerEvent: {}
+[1.553119] (my_simulation) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.554415] (my_simulation) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.601637] (-) TimerEvent: {}
+[1.653476] (my_simulation) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") \n'}
+[1.654674] (my_simulation) StdoutLine: {'line': b"-- Checking for module 'bullet>=2.82'\n"}
+[1.669352] (my_simulation) StdoutLine: {'line': b'--   Found bullet, version 3.05\n'}
+[1.701784] (-) TimerEvent: {}
+[1.795587] (my_simulation) StdoutLine: {'line': b'-- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") \n'}
+[1.801888] (-) TimerEvent: {}
+[1.863561] (my_simulation) StdoutLine: {'line': b'-- Found assimp: /usr/include (found version "5.2.0") \n'}
+[1.898643] (my_simulation) StdoutLine: {'line': b'-- Found DART: /usr/include (Required is at least version "6.6") found components: dart \n'}
+[1.901957] (-) TimerEvent: {}
+[1.937852] (my_simulation) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time \n'}
+[1.971534] (my_simulation) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[1.978938] (my_simulation) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[1.991673] (my_simulation) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[1.995643] (my_simulation) StdoutLine: {'line': b'-- Looking for OGRE...\n'}
+[1.996109] (my_simulation) StdoutLine: {'line': b'-- OGRE_PREFIX_WATCH changed.\n'}
+[2.002042] (-) TimerEvent: {}
+[2.002265] (my_simulation) StdoutLine: {'line': b"-- Checking for module 'OGRE'\n"}
+[2.016219] (my_simulation) StdoutLine: {'line': b'--   Found OGRE, version 1.9.0\n'}
+[2.054570] (my_simulation) StdoutLine: {'line': b'-- Found Ogre Ghadamon (1.9.0)\n'}
+[2.062326] (my_simulation) StdoutLine: {'line': b'-- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so\n'}
+[2.073921] (my_simulation) StdoutLine: {'line': b'-- Looking for OGRE_Paging...\n'}
+[2.079510] (my_simulation) StdoutLine: {'line': b'-- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so\n'}
+[2.079635] (my_simulation) StdoutLine: {'line': b'-- Looking for OGRE_Terrain...\n'}
+[2.084678] (my_simulation) StdoutLine: {'line': b'-- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so\n'}
+[2.084844] (my_simulation) StdoutLine: {'line': b'-- Looking for OGRE_Property...\n'}
+[2.089639] (my_simulation) StdoutLine: {'line': b'-- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so\n'}
+[2.089785] (my_simulation) StdoutLine: {'line': b'-- Looking for OGRE_RTShaderSystem...\n'}
+[2.094633] (my_simulation) StdoutLine: {'line': b'-- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so\n'}
+[2.094816] (my_simulation) StdoutLine: {'line': b'-- Looking for OGRE_Volume...\n'}
+[2.099309] (my_simulation) StdoutLine: {'line': b'-- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so\n'}
+[2.099408] (my_simulation) StdoutLine: {'line': b'-- Looking for OGRE_Overlay...\n'}
+[2.102144] (-) TimerEvent: {}
+[2.103873] (my_simulation) StdoutLine: {'line': b'-- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so\n'}
+[2.202293] (-) TimerEvent: {}
+[2.210810] (my_simulation) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[2.213824] (my_simulation) StdoutLine: {'line': b'-- Looking for ignition-transport8 -- found version 8.2.1\n'}
+[2.214339] (my_simulation) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport8\n'}
+[2.232263] (my_simulation) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") \n'}
+[2.244028] (my_simulation) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[2.249270] (my_simulation) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[2.266118] (my_simulation) StdoutLine: {'line': b'--   Found libzmq , version 4.3.4\n'}
+[2.302429] (-) TimerEvent: {}
+[2.305063] (my_simulation) StdoutLine: {'line': b'-- Found ZeroMQ: TRUE (Required is at least version "4") \n'}
+[2.337012] (my_simulation) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[2.392068] (my_simulation) StdoutLine: {'line': b'--   Found uuid, version 2.37.2\n'}
+[2.402670] (-) TimerEvent: {}
+[2.494559] (my_simulation) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[2.498197] (my_simulation) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[2.498805] (my_simulation) StdoutLine: {'line': b'-- Searching for dependencies of ignition-msgs5\n'}
+[2.502748] (-) TimerEvent: {}
+[2.521245] (my_simulation) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[2.527570] (my_simulation) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[2.542611] (my_simulation) StdoutLine: {'line': b'--   Found tinyxml2, version 9.0.0\n'}
+[2.582642] (my_simulation) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[2.585924] (my_simulation) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[2.586526] (my_simulation) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3\n'}
+[2.587123] (my_simulation) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[2.587933] (my_simulation) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[2.589538] (my_simulation) StdoutLine: {'line': b'-- Found DL: TRUE  \n'}
+[2.602887] (-) TimerEvent: {}
+[2.603428] (my_simulation) StdoutLine: {'line': b'-- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") \n'}
+[2.604418] (my_simulation) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [graphics]\n'}
+[2.607541] (my_simulation) StdoutLine: {'line': b'-- Looking for ignition-common3-graphics -- found version 3.14.0\n'}
+[2.608142] (my_simulation) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3-graphics\n'}
+[2.608537] (my_simulation) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[2.612654] (my_simulation) StdoutLine: {'line': b'-- Looking for ignition-fuel_tools4 -- found version 4.4.0\n'}
+[2.613179] (my_simulation) StdoutLine: {'line': b'-- Searching for dependencies of ignition-fuel_tools4\n'}
+[2.703044] (-) TimerEvent: {}
+[2.703246] (my_simulation) StdoutLine: {'line': b'-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  \n'}
+[2.714938] (my_simulation) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[2.730042] (my_simulation) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[2.770665] (my_simulation) StdoutLine: {'line': b'-- Found JSONCPP: TRUE  \n'}
+[2.777985] (my_simulation) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[2.793146] (my_simulation) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[2.803168] (-) TimerEvent: {}
+[2.833245] (my_simulation) StdoutLine: {'line': b'-- Found ZIP: TRUE  \n'}
+[2.834105] (my_simulation) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[2.834612] (my_simulation) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[2.835122] (my_simulation) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[2.840473] (my_simulation) StdoutLine: {'line': b'-- Gazebo version: 11.10\n'}
+[2.840850] (my_simulation) StdoutLine: {'line': b"-- Checking for module 'tbb'\n"}
+[2.857738] (my_simulation) StdoutLine: {'line': b'--   Found tbb, version 2021.5.0\n'}
+[2.899864] (my_simulation) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[2.903349] (-) TimerEvent: {}
+[2.948265] (my_simulation) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[2.995684] (my_simulation) StdoutLine: {'line': b"-- Checking for module 'eigen3'\n"}
+[3.003483] (-) TimerEvent: {}
+[3.010157] (my_simulation) StdoutLine: {'line': b'--   Found eigen3, version 3.4.0\n'}
+[3.047454] (my_simulation) StdoutLine: {'line': b'-- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") \n'}
+[3.047691] (my_simulation) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[3.057887] (my_simulation) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.65.0") found components: system filesystem date_time iostreams serialization \n'}
+[3.103587] (-) TimerEvent: {}
+[3.120297] (my_simulation) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[3.135304] (my_simulation) StdoutLine: {'line': b'--   Found libusb-1.0, version 1.0.25\n'}
+[3.174444] (my_simulation) StdoutLine: {'line': b'-- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  \n'}
+[3.175873] (my_simulation) StdoutLine: {'line': b'-- Found OpenNI: /usr/lib/libOpenNI.so;libusb::libusb (found version "1.5.4.0") \n'}
+[3.175990] (my_simulation) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[3.203679] (-) TimerEvent: {}
+[3.236800] (my_simulation) StdoutLine: {'line': b'-- Found OpenNI2: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb (found version "2.2.0.33") \n'}
+[3.236972] (my_simulation) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[3.237166] (my_simulation) StderrLine: {'line': b'\x1b[0m** WARNING ** io features related to pcap will be disabled\x1b[0m\n'}
+[3.237293] (my_simulation) StderrLine: {'line': b'\x1b[0m** WARNING ** io features related to png will be disabled\x1b[0m\n'}
+[3.283711] (my_simulation) StdoutLine: {'line': b'-- Found GLEW: /usr/lib/x86_64-linux-gnu/libGLEW.so  \n'}
+[3.292981] (my_simulation) StdoutLine: {'line': b'-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so  found components: OpenGL GLX \n'}
+[3.303810] (-) TimerEvent: {}
+[3.404076] (-) TimerEvent: {}
+[3.494704] (my_simulation) StdoutLine: {'line': b'-- Found MPI_C: /usr/lib/x86_64-linux-gnu/libmpi.so (found version "3.1") \n'}
+[3.495039] (my_simulation) StdoutLine: {'line': b'-- Found MPI: TRUE (found version "3.1") found components: C \n'}
+[3.499076] (my_simulation) StdoutLine: {'line': b'-- Found JsonCpp: /usr/lib/x86_64-linux-gnu/libjsoncpp.so (found suitable version "1.9.5", minimum required is "0.7.0") \n'}
+[3.504169] (-) TimerEvent: {}
+[3.509559] (my_simulation) StdoutLine: {'line': b'-- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") \n'}
+[3.530140] (my_simulation) StdoutLine: {'line': b'-- Found PNG: /usr/lib/x86_64-linux-gnu/libpng.so (found version "1.6.37") \n'}
+[3.555127] (my_simulation) StdoutLine: {'line': b'-- Found Eigen3: /usr/include/eigen3 (found version "3.4.0") \n'}
+[3.604310] (-) TimerEvent: {}
+[3.668052] (my_simulation) StdoutLine: {'line': b'-- Found X11: /usr/include   \n'}
+[3.668685] (my_simulation) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so\n'}
+[3.704406] (-) TimerEvent: {}
+[3.756817] (my_simulation) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found\n'}
+[3.757120] (my_simulation) StdoutLine: {'line': b'-- Looking for gethostbyname\n'}
+[3.804559] (-) TimerEvent: {}
+[3.837509] (my_simulation) StdoutLine: {'line': b'-- Looking for gethostbyname - found\n'}
+[3.837763] (my_simulation) StdoutLine: {'line': b'-- Looking for connect\n'}
+[3.904693] (-) TimerEvent: {}
+[3.920237] (my_simulation) StdoutLine: {'line': b'-- Looking for connect - found\n'}
+[3.920492] (my_simulation) StdoutLine: {'line': b'-- Looking for remove\n'}
+[4.001030] (my_simulation) StdoutLine: {'line': b'-- Looking for remove - found\n'}
+[4.001280] (my_simulation) StdoutLine: {'line': b'-- Looking for shmat\n'}
+[4.004792] (-) TimerEvent: {}
+[4.080892] (my_simulation) StdoutLine: {'line': b'-- Looking for shmat - found\n'}
+[4.081175] (my_simulation) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE\n'}
+[4.104950] (-) TimerEvent: {}
+[4.162163] (my_simulation) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE - found\n'}
+[4.205047] (-) TimerEvent: {}
+[4.249295] (my_simulation) StdoutLine: {'line': b'-- Found EXPAT: /usr/lib/x86_64-linux-gnu/libexpat.so (found version "2.4.7") \n'}
+[4.251840] (my_simulation) StdoutLine: {'line': b'-- Found double-conversion: /usr/lib/x86_64-linux-gnu/libdouble-conversion.so  \n'}
+[4.254940] (my_simulation) StdoutLine: {'line': b'-- Found LZ4: /usr/lib/x86_64-linux-gnu/liblz4.so (found version "1.9.3") \n'}
+[4.258213] (my_simulation) StdoutLine: {'line': b'-- Found LZMA: /usr/lib/x86_64-linux-gnu/liblzma.so (found version "5.2.5") \n'}
+[4.305251] (-) TimerEvent: {}
+[4.334721] (my_simulation) StdoutLine: {'line': b'-- Found JPEG: /usr/lib/x86_64-linux-gnu/libjpeg.so (found version "80") \n'}
+[4.341096] (my_simulation) StdoutLine: {'line': b'-- Found TIFF: /usr/lib/x86_64-linux-gnu/libtiff.so (found version "4.3.0")  \n'}
+[4.346568] (my_simulation) StdoutLine: {'line': b'-- Found Freetype: /usr/lib/x86_64-linux-gnu/libfreetype.so (found version "2.11.1") \n'}
+[4.353472] (my_simulation) StdoutLine: {'line': b'-- Found utf8cpp: /usr/include/utf8cpp  \n'}
+[4.395914] (my_simulation) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[4.396167] (my_simulation) StdoutLine: {'line': b'-- looking for PCL_COMMON\n'}
+[4.397075] (my_simulation) StdoutLine: {'line': b'-- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  \n'}
+[4.397277] (my_simulation) StdoutLine: {'line': b'-- looking for PCL_OCTREE\n'}
+[4.398066] (my_simulation) StdoutLine: {'line': b'-- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  \n'}
+[4.398251] (my_simulation) StdoutLine: {'line': b'-- looking for PCL_IO\n'}
+[4.398978] (my_simulation) StdoutLine: {'line': b'-- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  \n'}
+[4.399564] (my_simulation) StdoutLine: {'line': b'-- Found PCL: pcl_common;pcl_octree;pcl_io;Boost::system;Boost::filesystem;Boost::date_time;Boost::iostreams;Boost::serialization;/usr/lib/libOpenNI.so;libusb::libusb;/usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb;VTK::ChartsCore;VTK::CommonColor;VTK::CommonComputationalGeometry;VTK::CommonCore;VTK::CommonDataModel;VTK::CommonExecutionModel;VTK::CommonMath;VTK::CommonMisc;VTK::CommonTransforms;VTK::FiltersCore;VTK::FiltersExtraction;VTK::FiltersGeneral;VTK::FiltersGeometry;VTK::FiltersModeling;VTK::FiltersSources;VTK::ImagingCore;VTK::ImagingSources;VTK::InteractionImage;VTK::InteractionStyle;VTK::InteractionWidgets;VTK::IOCore;VTK::IOGeometry;VTK::IOImage;VTK::IOLegacy;VTK::IOPLY;VTK::RenderingAnnotation;VTK::RenderingCore;VTK::RenderingContext2D;VTK::RenderingLOD;VTK::RenderingFreeType;VTK::ViewsCore;VTK::ViewsContext2D;VTK::RenderingOpenGL2;VTK::GUISupportQt  \n'}
+[4.402528] (my_simulation) StdoutLine: {'line': b'-- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)\n'}
+[4.405347] (-) TimerEvent: {}
+[4.452265] (my_simulation) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[4.505481] (-) TimerEvent: {}
+[4.585929] (my_simulation) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[4.589957] (my_simulation) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[4.590376] (my_simulation) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/glenio/ros2_sim_ws/src/my_simulation/include>\n'}
+[4.590478] (my_simulation) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[4.594029] (my_simulation) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[4.594139] (my_simulation) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[4.595286] (my_simulation) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[4.596659] (my_simulation) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[4.598030] (my_simulation) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[4.601896] (my_simulation) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[4.602012] (my_simulation) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[4.603006] (my_simulation) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[4.604751] (my_simulation) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.605583] (-) TimerEvent: {}
+[4.645388] (my_simulation) StdoutLine: {'line': b'-- Generating done\n'}
+[4.654903] (my_simulation) StdoutLine: {'line': b'-- Build files have been written to: /home/glenio/ros2_sim_ws/build/my_simulation\n'}
+[4.674813] (my_simulation) CommandEnded: {'returncode': 0}
+[4.675852] (my_simulation) JobProgress: {'identifier': 'my_simulation', 'progress': 'build'}
+[4.677743] (my_simulation) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/glenio/ros2_sim_ws/build/my_simulation', '--', '-j8', '-l8'], 'cwd': '/home/glenio/ros2_sim_ws/build/my_simulation', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'glenio'), ('LC_TIME', 'fr_FR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/glenio'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'fr_FR.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1809'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=a24e36c757c78ab6a174940b68ef4dae'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'glenio'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'glenio'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/glenio/Parme/LIDAR/Ouster/VCPKG/vcpkg:/opt/ros/humble/bin:/home/glenio/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1809,unix/ubuntu:/tmp/.ICE-unix/1809'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'fr_FR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/bb07397b_c0da_41ad_baeb_a653b182df30'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'fr_FR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.EUY6D3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.243'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'fr_FR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('VCPKG_ROOT', '/home/glenio/Parme/LIDAR/Ouster/VCPKG/vcpkg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'fr_FR.UTF-8'), ('LC_IDENTIFICATION', 'fr_FR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/glenio/ros2_sim_ws/build/my_simulation'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=a24e36c757c78ab6a174940b68ef4dae'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'fr_FR.UTF-8'), ('LC_PAPER', 'fr_FR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[4.705740] (-) TimerEvent: {}
+[4.743957] (my_simulation) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/pointcloud_subscriber.dir/src/pointcloud_subscriber.cpp.o\x1b[0m\n'}
+[4.744140] (my_simulation) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/robot_control.dir/src/robot_control.cpp.o\x1b[0m\n'}
+[4.805881] (-) TimerEvent: {}
+[4.906166] (-) TimerEvent: {}
+[5.006442] (-) TimerEvent: {}
+[5.106726] (-) TimerEvent: {}
+[5.207035] (-) TimerEvent: {}
+[5.307346] (-) TimerEvent: {}
+[5.407672] (-) TimerEvent: {}
+[5.508014] (-) TimerEvent: {}
+[5.608313] (-) TimerEvent: {}
+[5.708640] (-) TimerEvent: {}
+[5.808927] (-) TimerEvent: {}
+[5.909237] (-) TimerEvent: {}
+[6.009536] (-) TimerEvent: {}
+[6.109867] (-) TimerEvent: {}
+[6.210168] (-) TimerEvent: {}
+[6.310508] (-) TimerEvent: {}
+[6.410845] (-) TimerEvent: {}
+[6.511097] (-) TimerEvent: {}
+[6.611417] (-) TimerEvent: {}
+[6.711725] (-) TimerEvent: {}
+[6.812026] (-) TimerEvent: {}
+[6.912407] (-) TimerEvent: {}
+[7.012714] (-) TimerEvent: {}
+[7.113022] (-) TimerEvent: {}
+[7.213360] (-) TimerEvent: {}
+[7.313683] (-) TimerEvent: {}
+[7.413928] (-) TimerEvent: {}
+[7.514257] (-) TimerEvent: {}
+[7.614574] (-) TimerEvent: {}
+[7.714884] (-) TimerEvent: {}
+[7.815182] (-) TimerEvent: {}
+[7.915507] (-) TimerEvent: {}
+[8.015826] (-) TimerEvent: {}
+[8.116144] (-) TimerEvent: {}
+[8.216480] (-) TimerEvent: {}
+[8.316846] (-) TimerEvent: {}
+[8.417172] (-) TimerEvent: {}
+[8.517520] (-) TimerEvent: {}
+[8.617836] (-) TimerEvent: {}
+[8.718141] (-) TimerEvent: {}
+[8.818432] (-) TimerEvent: {}
+[8.918767] (-) TimerEvent: {}
+[9.019101] (-) TimerEvent: {}
+[9.119399] (-) TimerEvent: {}
+[9.219674] (-) TimerEvent: {}
+[9.320004] (-) TimerEvent: {}
+[9.420332] (-) TimerEvent: {}
+[9.520635] (-) TimerEvent: {}
+[9.620933] (-) TimerEvent: {}
+[9.700293] (my_simulation) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable robot_control\x1b[0m\n'}
+[9.721038] (-) TimerEvent: {}
+[9.821334] (-) TimerEvent: {}
+[9.921735] (-) TimerEvent: {}
+[9.949145] (my_simulation) StdoutLine: {'line': b'[ 75%] Built target robot_control\n'}
+[10.021857] (-) TimerEvent: {}
+[10.122199] (-) TimerEvent: {}
+[10.222514] (-) TimerEvent: {}
+[10.322874] (-) TimerEvent: {}
+[10.423175] (-) TimerEvent: {}
+[10.523476] (-) TimerEvent: {}
+[10.623771] (-) TimerEvent: {}
+[10.724095] (-) TimerEvent: {}
+[10.824385] (-) TimerEvent: {}
+[10.924672] (-) TimerEvent: {}
+[11.024939] (-) TimerEvent: {}
+[11.125220] (-) TimerEvent: {}
+[11.225533] (-) TimerEvent: {}
+[11.325828] (-) TimerEvent: {}
+[11.426155] (-) TimerEvent: {}
+[11.526482] (-) TimerEvent: {}
+[11.626784] (-) TimerEvent: {}
+[11.727106] (-) TimerEvent: {}
+[11.827387] (-) TimerEvent: {}
+[11.927692] (-) TimerEvent: {}
+[12.028025] (-) TimerEvent: {}
+[12.128332] (-) TimerEvent: {}
+[12.228639] (-) TimerEvent: {}
+[12.328934] (-) TimerEvent: {}
+[12.429209] (-) TimerEvent: {}
+[12.529508] (-) TimerEvent: {}
+[12.629861] (-) TimerEvent: {}
+[12.730156] (-) TimerEvent: {}
+[12.830437] (-) TimerEvent: {}
+[12.930768] (-) TimerEvent: {}
+[13.031077] (-) TimerEvent: {}
+[13.131385] (-) TimerEvent: {}
+[13.231692] (-) TimerEvent: {}
+[13.332038] (-) TimerEvent: {}
+[13.432345] (-) TimerEvent: {}
+[13.532693] (-) TimerEvent: {}
+[13.633041] (-) TimerEvent: {}
+[13.733391] (-) TimerEvent: {}
+[13.833752] (-) TimerEvent: {}
+[13.934066] (-) TimerEvent: {}
+[14.034449] (-) TimerEvent: {}
+[14.134929] (-) TimerEvent: {}
+[14.235307] (-) TimerEvent: {}
+[14.335626] (-) TimerEvent: {}
+[14.435928] (-) TimerEvent: {}
+[14.536253] (-) TimerEvent: {}
+[14.636601] (-) TimerEvent: {}
+[14.736911] (-) TimerEvent: {}
+[14.837215] (-) TimerEvent: {}
+[14.937521] (-) TimerEvent: {}
+[15.037849] (-) TimerEvent: {}
+[15.138212] (-) TimerEvent: {}
+[15.238568] (-) TimerEvent: {}
+[15.338952] (-) TimerEvent: {}
+[15.439315] (-) TimerEvent: {}
+[15.539611] (-) TimerEvent: {}
+[15.639884] (-) TimerEvent: {}
+[15.740163] (-) TimerEvent: {}
+[15.840440] (-) TimerEvent: {}
+[15.940718] (-) TimerEvent: {}
+[16.040980] (-) TimerEvent: {}
+[16.141270] (-) TimerEvent: {}
+[16.241558] (-) TimerEvent: {}
+[16.341856] (-) TimerEvent: {}
+[16.442146] (-) TimerEvent: {}
+[16.542428] (-) TimerEvent: {}
+[16.642706] (-) TimerEvent: {}
+[16.742994] (-) TimerEvent: {}
+[16.843272] (-) TimerEvent: {}
+[16.943537] (-) TimerEvent: {}
+[17.043824] (-) TimerEvent: {}
+[17.144112] (-) TimerEvent: {}
+[17.244385] (-) TimerEvent: {}
+[17.344683] (-) TimerEvent: {}
+[17.444958] (-) TimerEvent: {}
+[17.545252] (-) TimerEvent: {}
+[17.645535] (-) TimerEvent: {}
+[17.745839] (-) TimerEvent: {}
+[17.846088] (-) TimerEvent: {}
+[17.946372] (-) TimerEvent: {}
+[18.046656] (-) TimerEvent: {}
+[18.146936] (-) TimerEvent: {}
+[18.247192] (-) TimerEvent: {}
+[18.347480] (-) TimerEvent: {}
+[18.447773] (-) TimerEvent: {}
+[18.548072] (-) TimerEvent: {}
+[18.648374] (-) TimerEvent: {}
+[18.748683] (-) TimerEvent: {}
+[18.849015] (-) TimerEvent: {}
+[18.949307] (-) TimerEvent: {}
+[19.019883] (my_simulation) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable pointcloud_subscriber\x1b[0m\n'}
+[19.049452] (-) TimerEvent: {}
+[19.149769] (-) TimerEvent: {}
+[19.250141] (-) TimerEvent: {}
+[19.350488] (-) TimerEvent: {}
+[19.450849] (-) TimerEvent: {}
+[19.551254] (-) TimerEvent: {}
+[19.651610] (-) TimerEvent: {}
+[19.751925] (-) TimerEvent: {}
+[19.852245] (-) TimerEvent: {}
+[19.884249] (my_simulation) StdoutLine: {'line': b'[100%] Built target pointcloud_subscriber\n'}
+[19.899822] (my_simulation) CommandEnded: {'returncode': 0}
+[19.901023] (my_simulation) JobProgress: {'identifier': 'my_simulation', 'progress': 'install'}
+[19.913066] (my_simulation) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/glenio/ros2_sim_ws/build/my_simulation'], 'cwd': '/home/glenio/ros2_sim_ws/build/my_simulation', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'glenio'), ('LC_TIME', 'fr_FR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/glenio'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'fr_FR.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1809'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=a24e36c757c78ab6a174940b68ef4dae'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'glenio'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'glenio'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/glenio/Parme/LIDAR/Ouster/VCPKG/vcpkg:/opt/ros/humble/bin:/home/glenio/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1809,unix/ubuntu:/tmp/.ICE-unix/1809'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'fr_FR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/bb07397b_c0da_41ad_baeb_a653b182df30'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'fr_FR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.EUY6D3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.243'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'fr_FR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('VCPKG_ROOT', '/home/glenio/Parme/LIDAR/Ouster/VCPKG/vcpkg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'fr_FR.UTF-8'), ('LC_IDENTIFICATION', 'fr_FR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/glenio/ros2_sim_ws/build/my_simulation'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=a24e36c757c78ab6a174940b68ef4dae'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'fr_FR.UTF-8'), ('LC_PAPER', 'fr_FR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[19.922385] (my_simulation) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[19.922564] (my_simulation) StdoutLine: {'line': b'-- Installing: /home/glenio/ros2_sim_ws/install/my_simulation/share/my_simulation/launch\n'}
+[19.922727] (my_simulation) StdoutLine: {'line': b'-- Installing: /home/glenio/ros2_sim_ws/install/my_simulation/share/my_simulation/launch/my_world.py\n'}
+[19.922859] (my_simulation) StdoutLine: {'line': b'-- Installing: /home/glenio/ros2_sim_ws/install/my_simulation/share/my_simulation/launch/maquette_launch.py\n'}
+[19.923057] (my_simulation) StdoutLine: {'line': b'-- Installing: /home/glenio/ros2_sim_ws/install/my_simulation/share/my_simulation/launch/maquette_robot_launch.py\n'}
+[19.923174] (my_simulation) StdoutLine: {'line': b'-- Installing: /home/glenio/ros2_sim_ws/install/my_simulation/share/my_simulation/launch/maquette_robot_rtabmap_launch.py\n'}
+[19.923293] (my_simulation) StdoutLine: {'line': b'-- Installing: /home/glenio/ros2_sim_ws/install/my_simulation/share/my_simulation/launch/rtabmap_livox.py\n'}
+[19.923408] (my_simulation) StdoutLine: {'line': b'-- Installing: /home/glenio/ros2_sim_ws/install/my_simulation/share/my_simulation/world\n'}
+[19.923510] (my_simulation) StdoutLine: {'line': b'-- Installing: /home/glenio/ros2_sim_ws/install/my_simulation/share/my_simulation/world/maquette_world.world\n'}
+[19.923613] (my_simulation) StdoutLine: {'line': b'-- Installing: /home/glenio/ros2_sim_ws/install/my_simulation/share/my_simulation/world/empty_world.world\n'}
+[19.923723] (my_simulation) StdoutLine: {'line': b'-- Installing: /home/glenio/ros2_sim_ws/install/my_simulation/share/my_simulation/world/pcl_world.world\n'}
+[19.923922] (my_simulation) StdoutLine: {'line': b'-- Installing: /home/glenio/ros2_sim_ws/install/my_simulation/share/my_simulation/world/maquette_vf_world.world\n'}
+[19.924016] (my_simulation) StdoutLine: {'line': b'-- Installing: /home/glenio/ros2_sim_ws/install/my_simulation/share/my_simulation/world/Lidar_room.world\n'}
+[19.924148] (my_simulation) StdoutLine: {'line': b'-- Installing: /home/glenio/ros2_sim_ws/install/my_simulation/share/my_simulation/models\n'}
+[19.924246] (my_simulation) StdoutLine: {'line': b'-- Installing: /home/glenio/ros2_sim_ws/install/my_simulation/share/my_simulation/models/pcl_data\n'}
+[19.924342] (my_simulation) StdoutLine: {'line': b'-- Installing: /home/glenio/ros2_sim_ws/install/my_simulation/share/my_simulation/models/pcl_data/pcl_data.sdf\n'}
+[19.924459] (my_simulation) StdoutLine: {'line': b'-- Installing: /home/glenio/ros2_sim_ws/install/my_simulation/share/my_simulation/models/pcl_data/model.config\n'}
+[19.924591] (my_simulation) StdoutLine: {'line': b'-- Installing: /home/glenio/ros2_sim_ws/install/my_simulation/share/my_simulation/models/pcl_data/meshes\n'}
+[19.924700] (my_simulation) StdoutLine: {'line': b'-- Installing: /home/glenio/ros2_sim_ws/install/my_simulation/share/my_simulation/models/pcl_data/meshes/pcl_out_time.dae\n'}
+[19.924939] (my_simulation) StdoutLine: {'line': b'-- Installing: /home/glenio/ros2_sim_ws/install/my_simulation/share/my_simulation/models/pcl_data/meshes/pcl_out_time.stl\n'}
+[19.925054] (my_simulation) StdoutLine: {'line': b'-- Installing: /home/glenio/ros2_sim_ws/install/my_simulation/share/my_simulation/models/maquette\n'}
+[19.925156] (my_simulation) StdoutLine: {'line': b'-- Installing: /home/glenio/ros2_sim_ws/install/my_simulation/share/my_simulation/models/maquette/model.config\n'}
+[19.925279] (my_simulation) StdoutLine: {'line': b'-- Installing: /home/glenio/ros2_sim_ws/install/my_simulation/share/my_simulation/models/maquette/maquette.sdf\n'}
+[19.925408] (my_simulation) StdoutLine: {'line': b'-- Installing: /home/glenio/ros2_sim_ws/install/my_simulation/share/my_simulation/models/maquette/meshes\n'}
+[19.925505] (my_simulation) StdoutLine: {'line': b'-- Installing: /home/glenio/ros2_sim_ws/install/my_simulation/share/my_simulation/models/maquette/meshes/maquette_n_support.stl\n'}
+[19.928732] (my_simulation) StdoutLine: {'line': b'-- Installing: /home/glenio/ros2_sim_ws/install/my_simulation/share/my_simulation/models/maquette_vf\n'}
+[19.928886] (my_simulation) StdoutLine: {'line': b'-- Installing: /home/glenio/ros2_sim_ws/install/my_simulation/share/my_simulation/models/maquette_vf/model.config\n'}
+[19.929056] (my_simulation) StdoutLine: {'line': b'-- Installing: /home/glenio/ros2_sim_ws/install/my_simulation/share/my_simulation/models/maquette_vf/meshes\n'}
+[19.929163] (my_simulation) StdoutLine: {'line': b'-- Installing: /home/glenio/ros2_sim_ws/install/my_simulation/share/my_simulation/models/maquette_vf/meshes/maquette_vf_.stl\n'}
+[19.934077] (my_simulation) StdoutLine: {'line': b'-- Installing: /home/glenio/ros2_sim_ws/install/my_simulation/share/my_simulation/models/maquette_vf/maquette_vf.sdf\n'}
+[19.934335] (my_simulation) StdoutLine: {'line': b'-- Installing: /home/glenio/ros2_sim_ws/install/my_simulation/share/my_simulation/urdf\n'}
+[19.934442] (my_simulation) StdoutLine: {'line': b'-- Installing: /home/glenio/ros2_sim_ws/install/my_simulation/share/my_simulation/urdf/only_lidar\n'}
+[19.934522] (my_simulation) StdoutLine: {'line': b'-- Installing: /home/glenio/ros2_sim_ws/install/my_simulation/share/my_simulation/urdf/only_lidar/base_core.xacro\n'}
+[19.934686] (my_simulation) StdoutLine: {'line': b'-- Installing: /home/glenio/ros2_sim_ws/install/my_simulation/share/my_simulation/urdf/only_lidar/only_lidar.urdf.xacro\n'}
+[19.934810] (my_simulation) StdoutLine: {'line': b'-- Installing: /home/glenio/ros2_sim_ws/install/my_simulation/share/my_simulation/urdf/robot_core.xacro\n'}
+[19.934931] (my_simulation) StdoutLine: {'line': b'-- Installing: /home/glenio/ros2_sim_ws/install/my_simulation/share/my_simulation/urdf/imu.xacro\n'}
+[19.935006] (my_simulation) StdoutLine: {'line': b'-- Installing: /home/glenio/ros2_sim_ws/install/my_simulation/share/my_simulation/urdf/lidar.xacro\n'}
+[19.935207] (my_simulation) StdoutLine: {'line': b'-- Installing: /home/glenio/ros2_sim_ws/install/my_simulation/share/my_simulation/urdf/robot.urdf.xacro\n'}
+[19.935321] (my_simulation) StdoutLine: {'line': b'-- Installing: /home/glenio/ros2_sim_ws/install/my_simulation/share/my_simulation/rviz\n'}
+[19.935436] (my_simulation) StdoutLine: {'line': b'-- Installing: /home/glenio/ros2_sim_ws/install/my_simulation/share/my_simulation/rviz/rviz_config.rviz\n'}
+[19.935679] (my_simulation) StdoutLine: {'line': b'-- Installing: /home/glenio/ros2_sim_ws/install/my_simulation/lib/my_simulation/robot_control\n'}
+[19.937193] (my_simulation) StdoutLine: {'line': b'-- Set runtime path of "/home/glenio/ros2_sim_ws/install/my_simulation/lib/my_simulation/robot_control" to ""\n'}
+[19.937433] (my_simulation) StdoutLine: {'line': b'-- Installing: /home/glenio/ros2_sim_ws/install/my_simulation/lib/my_simulation/pointcloud_subscriber\n'}
+[19.941404] (my_simulation) StdoutLine: {'line': b'-- Set runtime path of "/home/glenio/ros2_sim_ws/install/my_simulation/lib/my_simulation/pointcloud_subscriber" to ""\n'}
+[19.941624] (my_simulation) StdoutLine: {'line': b'-- Installing: /home/glenio/ros2_sim_ws/install/my_simulation/share/ament_index/resource_index/package_run_dependencies/my_simulation\n'}
+[19.941765] (my_simulation) StdoutLine: {'line': b'-- Installing: /home/glenio/ros2_sim_ws/install/my_simulation/share/ament_index/resource_index/parent_prefix_path/my_simulation\n'}
+[19.942047] (my_simulation) StdoutLine: {'line': b'-- Installing: /home/glenio/ros2_sim_ws/install/my_simulation/share/my_simulation/environment/ament_prefix_path.sh\n'}
+[19.942295] (my_simulation) StdoutLine: {'line': b'-- Installing: /home/glenio/ros2_sim_ws/install/my_simulation/share/my_simulation/environment/ament_prefix_path.dsv\n'}
+[19.942499] (my_simulation) StdoutLine: {'line': b'-- Installing: /home/glenio/ros2_sim_ws/install/my_simulation/share/my_simulation/environment/path.sh\n'}
+[19.942604] (my_simulation) StdoutLine: {'line': b'-- Installing: /home/glenio/ros2_sim_ws/install/my_simulation/share/my_simulation/environment/path.dsv\n'}
+[19.942725] (my_simulation) StdoutLine: {'line': b'-- Installing: /home/glenio/ros2_sim_ws/install/my_simulation/share/my_simulation/local_setup.bash\n'}
+[19.942839] (my_simulation) StdoutLine: {'line': b'-- Installing: /home/glenio/ros2_sim_ws/install/my_simulation/share/my_simulation/local_setup.sh\n'}
+[19.943033] (my_simulation) StdoutLine: {'line': b'-- Installing: /home/glenio/ros2_sim_ws/install/my_simulation/share/my_simulation/local_setup.zsh\n'}
+[19.943219] (my_simulation) StdoutLine: {'line': b'-- Installing: /home/glenio/ros2_sim_ws/install/my_simulation/share/my_simulation/local_setup.dsv\n'}
+[19.943411] (my_simulation) StdoutLine: {'line': b'-- Installing: /home/glenio/ros2_sim_ws/install/my_simulation/share/my_simulation/package.dsv\n'}
+[19.943626] (my_simulation) StdoutLine: {'line': b'-- Installing: /home/glenio/ros2_sim_ws/install/my_simulation/share/ament_index/resource_index/packages/my_simulation\n'}
+[19.943816] (my_simulation) StdoutLine: {'line': b'-- Installing: /home/glenio/ros2_sim_ws/install/my_simulation/share/my_simulation/cmake/my_simulationConfig.cmake\n'}
+[19.943992] (my_simulation) StdoutLine: {'line': b'-- Installing: /home/glenio/ros2_sim_ws/install/my_simulation/share/my_simulation/cmake/my_simulationConfig-version.cmake\n'}
+[19.944185] (my_simulation) StdoutLine: {'line': b'-- Installing: /home/glenio/ros2_sim_ws/install/my_simulation/share/my_simulation/package.xml\n'}
+[19.946368] (my_simulation) CommandEnded: {'returncode': 0}
+[19.954103] (-) TimerEvent: {}
+[19.964508] (my_simulation) JobEnded: {'identifier': 'my_simulation', 'rc': 0}
+[19.965214] (-) EventReactorShutdown: {}
