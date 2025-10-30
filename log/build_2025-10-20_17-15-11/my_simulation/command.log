@@ -1,6 +1,0 @@
-Invoking command in '/home/glenio/ros2_sim_ws/build/my_simulation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/glenio/ros2_sim_ws/src/my_simulation -DCMAKE_INSTALL_PREFIX=/home/glenio/ros2_sim_ws/install/my_simulation
-Invoked command in '/home/glenio/ros2_sim_ws/build/my_simulation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/glenio/ros2_sim_ws/src/my_simulation -DCMAKE_INSTALL_PREFIX=/home/glenio/ros2_sim_ws/install/my_simulation
-Invoking command in '/home/glenio/ros2_sim_ws/build/my_simulation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/glenio/ros2_sim_ws/build/my_simulation -- -j8 -l8
-Invoked command in '/home/glenio/ros2_sim_ws/build/my_simulation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/glenio/ros2_sim_ws/build/my_simulation -- -j8 -l8
-Invoking command in '/home/glenio/ros2_sim_ws/build/my_simulation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/glenio/ros2_sim_ws/build/my_simulation
-Invoked command in '/home/glenio/ros2_sim_ws/build/my_simulation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/glenio/ros2_sim_ws/build/my_simulation

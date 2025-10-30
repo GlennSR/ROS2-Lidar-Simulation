@@ -2,3 +2,4 @@ build/
 install/
 log/
 cloud_data/
+src/my_simulation/world/pcl_world.sdf
