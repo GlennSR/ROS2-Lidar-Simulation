@@ -15,6 +15,14 @@ def generate_launch_description():
     pause = LaunchConfiguration('pause')
     robot = LaunchConfiguration('robot')
     rviz_arg = LaunchConfiguration('rvizconfig')
+
+    # Robot Model Parameters   
+    # Spwan pose
+    x = LaunchConfiguration('x')
+    y = LaunchConfiguration('y')
+    z = LaunchConfiguration('z')
+    # Lidar inclination
+    lidar_inclination = LaunchConfiguration('lidar_angle')
     
     ## ROS 2 Robot import ##
     pkg_share = FindPackageShare(package='my_simulation').find('my_simulation')
@@ -29,7 +37,9 @@ def generate_launch_description():
     executable='robot_state_publisher',
     parameters=[{
         'use_sim_time': True,
-        'robot_description': Command(['xacro ', default_robot_path])
+        'robot_description': Command([
+            'xacro ', default_robot_path,
+            ' lidar_inclination:=', lidar_inclination])
     }],
     condition=UnlessCondition(LaunchConfiguration('only_lidar'))
     )
@@ -39,7 +49,9 @@ def generate_launch_description():
     executable='robot_state_publisher',
     parameters=[{
         'use_sim_time': True,
-        'robot_description': Command(['xacro ', only_lidar_robot_path])
+        'robot_description': Command([
+            'xacro ', only_lidar_robot_path,
+            ' lidar_inclination:=', lidar_inclination])
     }],
     condition=IfCondition(LaunchConfiguration('only_lidar'))
     )
@@ -57,9 +69,9 @@ def generate_launch_description():
         arguments=[
         '-entity', 'robot_core', 
         '-topic', 'robot_description',
-        '-x', '0.0',
-        '-y', '0.0',
-        '-z', '0.0'
+        '-x', x,
+        '-y', y,
+        '-z', z
         ],
         output='screen'
         )
@@ -111,6 +123,10 @@ def generate_launch_description():
         ),
         DeclareLaunchArgument(name='rvizconfig', default_value=default_rviz_config_path,
                                      description='Absolute path to rviz config file'),
+        DeclareLaunchArgument(name='x', default_value='0.0', description='Initial X position of the robot'),
+        DeclareLaunchArgument(name='y', default_value='0.0', description='Initial Y position of the robot'),
+        DeclareLaunchArgument(name='z', default_value='0.0', description='Initial Z position of the robot'),
+        DeclareLaunchArgument(name='lidar_angle', default_value=str(3.1415/4), description='Lidar inclination angle in degrees'),
 
         ## ROS 2 Robot import ##
         DeclareLaunchArgument(name='robot', default_value=default_robot_path,
