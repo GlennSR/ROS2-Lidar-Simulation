@@ -31,7 +31,7 @@ def generate_launch_description():
     y = LaunchConfiguration('y')
     z = LaunchConfiguration('z')
     # Lidar inclination
-    lidar_inclination = LaunchConfiguration('lidar_inclination')
+    lidar_inclination = LaunchConfiguration('lidar_angle')
 
 
     # Set Gazebo model path
