@@ -1,11 +1,12 @@
 <?xml version="1.0"?>
-<robot xmlns:xacro="http://www.ros.org/wiki/xacro"  name="robot">
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="robot">
 
   <joint name="imu_joint" type="fixed">
     <origin rpy="0 3.141592653589793 0" xyz="0 0 0"/>
     <parent link="base_link"/>
     <child link="imu_link"/>
   </joint>
+
   <link name="imu_link">
     <inertial>
       <origin xyz="0 0 0"/>
@@ -15,23 +16,26 @@
   </link>
 
   <gazebo reference="imu_link">
-    <gravity>true</gravity>
-    <sensor name="imu_sensor" type="imu">
-      <always_on>true</always_on>
+    <plugin name="gz::sim::systems::Imu" filename="gz-sim-imu-system">
+      <ros>
+        <remapping>imu:=/imu</remapping>
+      </ros>
+      <frame_id>base_link</frame_id>
       <update_rate>200</update_rate>
+      <always_on>true</always_on>
       <visualize>true</visualize>
-      <pose>0 0 0 0 0 0</pose>
-      <plugin filename="libgazebo_ros_imu_sensor.so" name="imu_plugin">
-        <topicName>imu_raw</topicName>
-        <update_rate>0</update_rate>
-        <bodyName>imu_link</bodyName>
-        <gaussianNoise>0.0</gaussianNoise>
-        <xyzOffset>0 0 0</xyzOffset>
-        <rpyOffset>0 0 0</rpyOffset>
-        <frameName>base_link</frameName>
-        <initialOrientationAsReference>false</initialOrientationAsReference>
-      </plugin>
-    </sensor>
+      <orientation_reference_frame>world</orientation_reference_frame>
+      <noise>
+        <angular_velocity>
+          <mean>0.0</mean>
+          <stddev>0.0</stddev>
+        </angular_velocity>
+        <linear_acceleration>
+          <mean>0.0</mean>
+          <stddev>0.0</stddev>
+        </linear_acceleration>
+      </noise>
+    </plugin>
   </gazebo>
-    
+
 </robot>

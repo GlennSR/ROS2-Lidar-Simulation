@@ -1,1 +1,1 @@
-prepend-non-duplicate-if-exists;PATH;bin
+/home/gro5293/ros2-lidar/build/my_simulation/ament_cmake_environment_hooks/path.dsv

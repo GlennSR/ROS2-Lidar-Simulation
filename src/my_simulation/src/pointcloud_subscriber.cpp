@@ -19,7 +19,7 @@ Inside a ros2 workspace:
 -- source the workspace:
 $ source install/setup.bash
 
--- run the subscriber with the desired file format (obj, pcd or xyz). If no format is specified, default is 'obj':
+-- run the subscriber with the desired file format (obj, pcd, ply or xyz). If no format is specified, default is 'obj':
 $ ros2 run my_simulation pointcloud_subscriber [file_format]
 
 */
@@ -34,7 +34,7 @@ public:
     PointCloudSubscriber() : Node("PCL_sub")
     {
         subscription_ = this->create_subscription<sensor_msgs::msg::PointCloud2>(
-            "/lidar/out", 10,
+            "/lidar_points", 10,
             std::bind(&PointCloudSubscriber::callback, this, std::placeholders::_1));
     }
 

@@ -1,1 +1,1 @@
-gazebo_ros:pcl_ros:rclcpp:rtabmap_odom:rtabmap_slam:rtabmap_util:rtabmap_viz:urdf:urdf_launch:xacro
+pcl_ros:rclcpp:ros_gz:ros_gz_bridge:ros_gz_image:ros_gz_sim:rtabmap_odom:rtabmap_slam:rtabmap_util:rtabmap_viz:sensor_msgs:tf2:urdf:urdf_launch:xacro

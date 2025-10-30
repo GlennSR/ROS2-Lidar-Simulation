@@ -1,2 +1,1 @@
-source;share/my_simulation/environment/ament_prefix_path.sh
-source;share/my_simulation/environment/path.sh
+/home/gro5293/ros2-lidar/build/my_simulation/ament_cmake_environment_hooks/local_setup.dsv

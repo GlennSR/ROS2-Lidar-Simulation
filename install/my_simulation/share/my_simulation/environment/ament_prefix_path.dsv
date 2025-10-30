@@ -1,1 +1,1 @@
-prepend-non-duplicate;AMENT_PREFIX_PATH;
+/home/gro5293/ros2-lidar/build/my_simulation/ament_cmake_environment_hooks/ament_prefix_path.dsv

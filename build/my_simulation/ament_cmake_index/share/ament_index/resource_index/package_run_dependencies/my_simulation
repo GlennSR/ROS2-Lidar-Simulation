@@ -1,1 +1,1 @@
-rclcpp;pcl_ros;urdf_launch;gazebo_ros;urdf;xacro;rtabmap_odom;rtabmap_slam;rtabmap_util;rtabmap_viz;ament_lint_auto;ament_lint_common
+rclcpp;ros_gz;ros_gz_sim;ros_gz_bridge;ros_gz_image;pcl_ros;sensor_msgs;tf2;urdf_launch;urdf;xacro;rtabmap_odom;rtabmap_slam;rtabmap_util;rtabmap_viz;ament_lint_auto;ament_lint_common

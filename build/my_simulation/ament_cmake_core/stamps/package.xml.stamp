@@ -11,13 +11,17 @@
   <exec_depend>urdf_launch</exec_depend>
   
   <depend>rclcpp</depend>
-  <build_depend>gazebo_ros</build_depend>
-  <exec_depend>gazebo_ros</exec_depend>
+  <depend>ros_gz</depend>
+  <depend>ros_gz_sim</depend>
+  <depend>ros_gz_bridge</depend>
+  <depend>ros_gz_image</depend>
   <build_depend>urdf</build_depend>
   <exec_depend>urdf</exec_depend>
   <build_depend>xacro</build_depend>
   <exec_depend>xacro</exec_depend>
   <depend>pcl_ros</depend>
+  <depend>sensor_msgs</depend>
+  <depend>tf2</depend>
 
   <!-- Dependências RTABMap -->
   <exec_depend>rtabmap_odom</exec_depend>

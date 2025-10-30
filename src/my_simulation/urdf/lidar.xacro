@@ -1,88 +1,95 @@
 <?xml version="1.0"?>
-<robot xmlns:xacro="http://www.ros.org/wiki/xacro"  name="robot">
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="robot">
 
-    <!-- Change it to choose the lidar parameters from Ouster OS1 or other -->
-    <xacro:property name="lidar_model" value="ouster"/>
-    
-    <xacro:arg name="lidar_base_offset_z" default="0.205"/>
+  <xacro:property name="lidar_model" value="ouster-os0"/>
+  <xacro:arg name="lidar_base_offset_z" default="0.205"/>
+  <xacro:arg name="lidar_inclination" default="${pi/4}"/>
 
-    <xacro:arg name="lidar_inclination" default="${pi/4}"/>
+  <xacro:macro name="cylinder_inertia" params="m r h">
+    <inertial>
+      <origin xyz="0 0 0" rpy="${pi/2} 0 0"/>
+      <mass value="${m}"/>
+      <inertia
+        ixx="${(m/12)*(3*r*r + h*h)}"
+        ixy="0" ixz="0"
+        iyy="${(m/12)*(3*r*r + h*h)}"
+        iyz="0"
+        izz="${(m/2)*(r*r)}"/>
+    </inertial>
+  </xacro:macro>
 
-    <xacro:macro name="cylinder_inertia" params="m r h">
-        <inertial>
-        <origin xyz="0 0 0" rpy="${pi/2} 0 0" />
-        <mass value="${m}"/>
-        <inertia ixx="${(m/12) * (3*r*r + h*h)}" ixy = "0" ixz = "0" iyy="${(m/12) * (3*r*r + h*h)}" iyz = "0" izz="${(m/2) * (r*r)}"/>
-        </inertial>
-    </xacro:macro>
+  <xacro:macro name="lidar_parameters" params="samp res min_ang max_ang">
+    <samples>${samp}</samples>
+    <resolution>${res}</resolution>
+    <min_angle>${min_ang}</min_angle>
+    <max_angle>${max_ang}</max_angle>
+  </xacro:macro>
 
-    <xacro:macro name="lidar_parameters" params="samp res min_ang max_ang">
-        <samples>${samp}</samples>
-        <resolution>${res}</resolution>
-        <min_angle>${min_ang}</min_angle>
-        <max_angle>${max_ang}</max_angle>
-    </xacro:macro>
+  <joint name="lidar_base_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="lidar_link"/>
+    <origin xyz="0 0 $(arg lidar_base_offset_z)" rpy="0 $(arg lidar_inclination) 0"/>
+  </joint>
 
-    <joint name="lidar_base_joint" type="fixed">
-        <parent link="base_link"/>
-        <child link="lidar_link"/>
-        <origin xyz="0 0 $(arg lidar_base_offset_z)" rpy="0 $(arg lidar_inclination) 0"/>
-    </joint>
+  <link name="lidar_link">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <cylinder length="0.05" radius="0.05"/>
+      </geometry>
+      <material name="red">
+        <color rgba="1 0 0 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.05" radius="0.05"/>
+      </geometry>
+    </collision>
+    <xacro:cylinder_inertia m="0.1" r="0.05" h="0.05"/>
+  </link>
 
-    <link name="lidar_link">
-        <visual>
-            <origin xyz="0 0 0" rpy="0 0 0"/>
-            <geometry>
-                <cylinder length="0.05" radius="0.05"/>
-            </geometry>
-            <material name="red">
-                <color rgba="1 0 0 1.0"/>
-            </material>
-        </visual>
-        <collision>
-            <geometry>
-                <cylinder length="0.05" radius="0.05"/>
-            </geometry>
-        </collision>
+  <gazebo>
+    <plugin filename="gz-sim-sensors-system" name="gz::sim::systems::Sensors">
+      <render_engine>ogre2</render_engine>
+    </plugin>
+  </gazebo>
 
-        <xacro:cylinder_inertia m="0.1" r="0.05" h="0.05"/>
-    </link>
+  <gazebo reference="lidar_link">
+    <sensor name="gpu_lidar" type="gpu_lidar">
+      <topic>/lidar</topic>
+      <gz_frame_id>lidar_link</gz_frame_id>
+      <update_rate>0.25</update_rate>
 
-    <gazebo reference="lidar_link">
-        <material>Gazebo/Red</material>
+      <lidar>
+        <scan>
+          <horizontal>
+            <xacro:if value="${lidar_model == 'ouster-os0'}">
+              <!-- Set 'samp'=1024 for a real Ouster Lidar parameter, it was set to 64 to make the simulation run faster -->
+              <xacro:lidar_parameters samp="250" res="1" min_ang="${-pi*2}" max_ang="${pi*2}"/>
+            </xacro:if>
+          </horizontal>
+          <vertical>
+            <xacro:if value="${lidar_model == 'ouster-os0'}">
+              <xacro:lidar_parameters samp="32" res="1" min_ang="${-pi/4}" max_ang="${pi/4}"/>
+            </xacro:if>
+          </vertical>
+        </scan>
+        <range>
+          <min>0.25</min> <!-- Min distance in meters -->
+          <max>100</max> <!-- Max distance in meters -->
+          <resolution>0.01</resolution>
+        </range>
+        <!--<noise>
+          <type>gaussian</type>
+          <mean>0.0</mean>
+          <stddev>0.01</stddev>
+        </noise>-->
+      </lidar>
 
-        <sensor name="ouster-OS0" type="ray">
-            <pose>0 0 0 0 0 0</pose>
-            <visualize>false</visualize>
-            <update_rate>0.25</update_rate>
-            <ray>
-                <scan>
-                    <horizontal>
-                        <xacro:if value="${lidar_model == 'ouster'}">
-                            <!-- Set 'samp'=1024 for a real Ouster Lidar parameter, it was set to 64 to make the simulation run faster -->
-                            <xacro:lidar_parameters samp="250" res="1" min_ang="${-pi*2}" max_ang="${pi*2}"/>
-                        </xacro:if>
-                    </horizontal>
-                    <vertical>
-                        <xacro:if value="${lidar_model == 'ouster'}">
-                            <xacro:lidar_parameters samp="32" res="1" min_ang="${-pi/4}" max_ang="${pi/4}"/>
-                        </xacro:if>
-                    </vertical>
-                </scan>
-                <range>
-                    <min>0.25</min> <!-- Min distance in meters -->
-                    <max>1.5</max> <!-- Max distance in meters -->
-                    <resolution>0.001</resolution>
-                </range>
-            </ray>
-            <plugin name="lidar" filename="libgazebo_ros_ray_sensor.so">
-                <output_type>sensor_msgs/PointCloud2</output_type>
-                <frame_name>lidar_link</frame_name>
-                <organize_cloud>false</organize_cloud>
-                <min_range>0.9</min_range>
-                <max_range>50.0</max_range>
-            </plugin>
-        </sensor>
-    </gazebo>
-    
+      <always_on>true</always_on>
+      <visualize>false</visualize>
+    </sensor>
+  </gazebo>
+
 </robot>
